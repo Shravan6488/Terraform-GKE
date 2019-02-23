@@ -1,15 +1,15 @@
 resource "kubernetes_replication_controller" "nginx" {
   metadata {
-    name = "scalable-nginx-example"
+    name = "shravan-nginx-example"
     labels {
-      App = "ScalableNginxExample"
+      App = "shravannginxexample"
     }
   }
 
   spec {
     replicas = 2
     selector {
-      App = "ScalableNginxExample"
+      App = "shravannginxexample"
     }
     template {
       container {
@@ -37,7 +37,7 @@ resource "kubernetes_replication_controller" "nginx" {
 
 resource "kubernetes_service" "nginx" {
   metadata {
-    name = "nginx-example"
+    name = "shravan-nginx-example"
   }
   spec {
     selector {
