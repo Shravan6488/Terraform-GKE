@@ -2,8 +2,8 @@
 #####################################################################
 # GKE Cluster
 #####################################################################
-resource "google_container_cluster" "guestbook" {
-  name               = "guestbook"
+resource "google_container_cluster" "shravan" {
+  name               = "shravan"
   zone               = "us-east1-b"
   initial_node_count = 3
 
