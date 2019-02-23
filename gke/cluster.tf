@@ -35,21 +35,21 @@ resource "google_container_cluster" "shravan" {
 # Output for K8S
 #####################################################################
 output "client_certificate" {
-  value     = "${google_container_cluster.guestbook.master_auth.0.client_certificate}"
+  value     = "${google_container_cluster.shravan.master_auth.0.client_certificate}"
   sensitive = true
 }
 
 output "client_key" {
-  value     = "${google_container_cluster.guestbook.master_auth.0.client_key}"
+  value     = "${google_container_cluster.shravan.master_auth.0.client_key}"
   sensitive = true
 }
 
 output "cluster_ca_certificate" {
-  value     = "${google_container_cluster.guestbook.master_auth.0.cluster_ca_certificate}"
+  value     = "${google_container_cluster.shravan.master_auth.0.cluster_ca_certificate}"
   sensitive = true
 }
 
 output "host" {
-  value     = "${google_container_cluster.guestbook.endpoint}"
+  value     = "${google_container_cluster.shravan.endpoint}"
   sensitive = true
 }
