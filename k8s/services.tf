@@ -19,7 +19,12 @@ resource "kubernetes_replication_controller" "nginx" {
         port {
           container_port = 80
         }
-
+        
+        env {
+          name  = "GET_HOSTS_FROM"
+          value = "dns"
+        }
+        
         resources {
           limits {
             cpu    = "0.5"
