@@ -1,9 +1,9 @@
 #prerequsites
 
-Git
-Google Cloud SDK - https://cloud.google.com/sdk/
-Terraform - https://www.terraform.io/downloads.html
-Kubectl - https://kubernetes.io/docs/tasks/tools/install-kubectl/
+- Git
+- Google Cloud SDK - https://cloud.google.com/sdk/
+- Terraform - https://www.terraform.io/downloads.html
+- Kubectl - https://kubernetes.io/docs/tasks/tools/install-kubectl/
 
 
 
