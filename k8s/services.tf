@@ -14,7 +14,7 @@ resource "kubernetes_replication_controller" "nginx" {
     template {
       container {
         image = "nginx:1.7.8"
-        name  = "example"
+        name  = "test-nginx"
 
         port {
           container_port = 80
