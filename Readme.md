@@ -9,9 +9,7 @@
 
 #### execute below commands before terraform actions.Below variables initialize some variables that the GCP provider requires
 
-- export TF_VAR_project="$(gcloud config list \
-  --format 'value(core.project)'
-)"
+- export TF_VAR_project="$(gcloud config list --format 'value(core.project)')"
 - export TF_VAR_region="us-east1"
 
 #### #we’ll need to specify the administrative account and a random password for the cluster
